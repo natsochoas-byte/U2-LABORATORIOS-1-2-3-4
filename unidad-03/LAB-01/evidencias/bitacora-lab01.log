@@ -1,0 +1,93 @@
+2026-11-08 20:07:14.449 MST [46623] LOG:  starting PostgreSQL 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-11-08 20:07:14.449 MST [46623] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-11-08 20:07:14.586 MST [46623] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-11-08 20:07:15.298 MST [46627] LOG:  database system was shut down at 2026-11-08 20:07:13 MST
+2026-11-08 20:07:15.739 MST [46623] LOG:  database system is ready to accept connections
+2026-11-08 20:12:15.396 MST [46625] LOG:  checkpoint starting: time
+2026-11-08 20:12:16.372 MST [46625] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.144 s, sync=0.049 s, total=0.976 s; sync files=2, longest=0.025 s, average=0.025 s; distance=0 kB, estimate=0 kB; lsn=0/1ACBF38, redo lsn=0/1ACBF00
+2026-11-08 20:22:15.571 MST [46625] LOG:  checkpoint starting: time
+2026-11-08 20:22:21.384 MST [46625] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.244 s, sync=1.205 s, total=5.814 s; sync files=20, longest=0.214 s, average=0.061 s; distance=106 kB, estimate=106 kB; lsn=0/1AE6980, redo lsn=0/1AE6948
+2026-11-08 20:31:20.033 MST [49021] app_ventas@comercial FATAL:  password authentication failed for user "app_ventas"
+2026-11-08 20:31:20.033 MST [49021] app_ventas@comercial DETAIL:  Role "app_ventas" does not exist.
+	Connection matched file "/etc/postgresql/16/main/pg_hba.conf" line 125: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-11-08 20:31:20.041 MST [49022] app_ventas@comercial FATAL:  password authentication failed for user "app_ventas"
+2026-11-08 20:31:20.041 MST [49022] app_ventas@comercial DETAIL:  Role "app_ventas" does not exist.
+	Connection matched file "/etc/postgresql/16/main/pg_hba.conf" line 125: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-11-08 20:59:59.509 MST [49668] postgres@natalia_ochoa ERROR:  ALTER SYSTEM cannot run inside a transaction block
+2026-11-08 20:59:59.509 MST [49668] postgres@natalia_ochoa STATEMENT:  ALTER SYSTEM SET log_connections = on;
+	ALTER SYSTEM SET log_disconnections = on;
+	ALTER SYSTEM SET log_line_prefix = '%m [%p] user=%u db=%d app=%a client=%h ';
+	ALTER SYSTEM SET log_statement = 'ddl';
+	SELECT pg_reload_conf();
+2026-11-08 21:00:13.581 MST [46623] LOG:  received SIGHUP, reloading configuration files
+2026-11-08 21:08:32.025 MST [51774] app_ventas@comercial FATAL:  password authentication failed for user "app_ventas"
+2026-11-08 21:08:32.025 MST [51774] app_ventas@comercial DETAIL:  Role "app_ventas" does not exist.
+	Connection matched file "/etc/postgresql/16/main/pg_hba.conf" line 125: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-11-08 21:08:32.032 MST [51775] app_ventas@comercial FATAL:  password authentication failed for user "app_ventas"
+2026-11-08 21:08:32.032 MST [51775] app_ventas@comercial DETAIL:  Role "app_ventas" does not exist.
+	Connection matched file "/etc/postgresql/16/main/pg_hba.conf" line 125: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-11-08 21:08:54.136 MST [51803] usuario_inexistente@comercial FATAL:  password authentication failed for user "usuario_inexistente"
+2026-11-08 21:08:54.136 MST [51803] usuario_inexistente@comercial DETAIL:  Role "usuario_inexistente" does not exist.
+	Connection matched file "/etc/postgresql/16/main/pg_hba.conf" line 125: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-11-08 21:08:54.142 MST [51804] usuario_inexistente@comercial FATAL:  password authentication failed for user "usuario_inexistente"
+2026-11-08 21:08:54.142 MST [51804] usuario_inexistente@comercial DETAIL:  Role "usuario_inexistente" does not exist.
+	Connection matched file "/etc/postgresql/16/main/pg_hba.conf" line 125: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-11-08 21:09:00.799 MST [51813] app_ventas@comercial FATAL:  password authentication failed for user "app_ventas"
+2026-11-08 21:09:00.799 MST [51813] app_ventas@comercial DETAIL:  Role "app_ventas" does not exist.
+	Connection matched file "/etc/postgresql/16/main/pg_hba.conf" line 125: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-11-08 21:09:00.806 MST [51814] app_ventas@comercial FATAL:  password authentication failed for user "app_ventas"
+2026-11-08 21:09:00.806 MST [51814] app_ventas@comercial DETAIL:  Role "app_ventas" does not exist.
+	Connection matched file "/etc/postgresql/16/main/pg_hba.conf" line 125: "host    all             all             127.0.0.1/32            scram-sha-256"
+2026-11-08 21:18:53.950 MST [52337] postgres@natalia_ochoa ERROR:  role "soporte_ana" does not exist
+2026-11-08 21:18:53.950 MST [52337] postgres@natalia_ochoa STATEMENT:  REVOKE UPDATE ON clientes FROM soporte_ana;
+	GRANT UPDATE ON clientes TO app_ventas;
+	ALTER TABLE clientes ADD COLUMN segmento VARCHAR(20);
+2026-11-08 21:18:57.677 MST [52337] postgres@natalia_ochoa ERROR:  role "soporte_ana" does not exist
+2026-11-08 21:18:57.677 MST [52337] postgres@natalia_ochoa STATEMENT:  REVOKE UPDATE ON clientes FROM soporte_ana;
+2026-11-08 21:20:35.178 MST [52337] postgres@natalia_ochoa ERROR:  role "soporte_ana" does not exist
+2026-11-08 21:20:35.178 MST [52337] postgres@natalia_ochoa STATEMENT:  REVOKE UPDATE ON clientes FROM soporte_ana;
+2026-11-08 21:22:53.935 MST [52337] postgres@natalia_ochoa ERROR:  role "app_ventas" does not exist
+2026-11-08 21:22:53.935 MST [52337] postgres@natalia_ochoa STATEMENT:  GRANT UPDATE ON clientes TO app_ventas;
+2026-11-08 21:23:15.376 MST [52337] postgres@natalia_ochoa ERROR:  syntax error at or near "LTER" at character 1
+2026-11-08 21:23:15.376 MST [52337] postgres@natalia_ochoa STATEMENT:  LTER TABLE clientes ADD COLUMN segmento VARCHAR(20)
+2026-11-08 21:24:49.162 MST [52337] postgres@natalia_ochoa ERROR:  role "app_ventas" does not exist
+2026-11-08 21:24:49.162 MST [52337] postgres@natalia_ochoa STATEMENT:  GRANT UPDATE ON clientes TO app_ventas;
+2026-11-08 21:25:03.425 MST [52337] postgres@natalia_ochoa ERROR:  column "segmento" of relation "clientes" already exists
+2026-11-08 21:25:03.425 MST [52337] postgres@natalia_ochoa STATEMENT:  ALTER TABLE clientes ADD COLUMN segmento VARCHAR(20);
+2026-11-08 21:25:58.004 MST [52337] postgres@natalia_ochoa ERROR:  role "rol_temporal" does not exist
+2026-11-08 21:25:58.004 MST [52337] postgres@natalia_ochoa STATEMENT:  DROP ROLE rol_temporal;
+2026-11-08 21:27:16.566 MST [46625] LOG:  checkpoint starting: time
+2026-11-08 21:27:20.044 MST [46625] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.895 s, sync=0.262 s, total=3.479 s; sync files=12, longest=0.206 s, average=0.022 s; distance=29 kB, estimate=98 kB; lsn=0/1AEDE40, redo lsn=0/1AEDE08
+2026-11-08 21:29:36.269 MST [52337] postgres@natalia_ochoa ERROR:  ALTER SYSTEM cannot run inside a transaction block
+2026-11-08 21:29:36.269 MST [52337] postgres@natalia_ochoa STATEMENT:  ALTER SYSTEM SET log_statement = 'mod';
+	SELECT pg_reload_conf();
+2026-11-08 21:33:12.022 MST [52337] postgres@natalia_ochoa ERROR:  role "soporte_ana" does not exist
+2026-11-08 21:33:12.022 MST [52337] postgres@natalia_ochoa STATEMENT:  DROP ROLE soporte_ana;
+2026-11-08 21:34:30.444 MST [53913] soporte_ana@comercial FATAL:  database "comercial" does not exist
+2026-11-08 21:35:22.255 MST [52337] postgres@natalia_ochoa ERROR:  role "soporte_ana" cannot be dropped because some objects depend on it
+2026-11-08 21:35:22.255 MST [52337] postgres@natalia_ochoa DETAIL:  privileges for table clientes
+2026-11-08 21:35:22.255 MST [52337] postgres@natalia_ochoa STATEMENT:  DROP ROLE soporte_ana;
+2026-11-08 21:37:16.244 MST [46625] LOG:  checkpoint starting: time
+2026-11-08 21:37:18.293 MST [46625] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.149 s, sync=0.077 s, total=2.049 s; sync files=8, longest=0.052 s, average=0.010 s; distance=9 kB, estimate=89 kB; lsn=0/1AF0258, redo lsn=0/1AF0220
+2026-11-08 21:52:16.579 MST [46625] LOG:  checkpoint starting: time
+2026-11-08 21:52:21.263 MST [46625] LOG:  checkpoint complete: wrote 40 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.094 s, sync=0.318 s, total=4.684 s; sync files=38, longest=0.069 s, average=0.009 s; distance=171 kB, estimate=171 kB; lsn=0/1B1AE98, redo lsn=0/1B1AE60
+2026-11-08 21:57:16.266 MST [46625] LOG:  checkpoint starting: time
+2026-11-08 21:57:18.446 MST [46625] LOG:  checkpoint complete: wrote 18 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.767 s, sync=0.165 s, total=2.180 s; sync files=14, longest=0.140 s, average=0.012 s; distance=82 kB, estimate=162 kB; lsn=0/1B2F9D0, redo lsn=0/1B2F998
+2026-11-08 21:57:22.496 MST [55839] postgres@natalia_ochoa ERROR:  trigger "trg_auditoria_clientes" for relation "clientes" already exists
+2026-11-08 21:57:22.496 MST [55839] postgres@natalia_ochoa STATEMENT:  CREATE TRIGGER trg_auditoria_clientes
+	AFTER INSERT OR UPDATE OR DELETE ON clientes
+	FOR EACH ROW EXECUTE FUNCTION auditoria.registrar_cambio_cliente();
+2026-11-08 21:58:42.684 MST [55839] postgres@natalia_ochoa ERROR:  trigger "trg_auditoria_clientes" for relation "clientes" already exists
+2026-11-08 21:58:42.684 MST [55839] postgres@natalia_ochoa STATEMENT:  CREATE TRIGGER trg_auditoria_clientes
+	AFTER INSERT OR UPDATE OR DELETE ON clientes
+	FOR EACH ROW EXECUTE FUNCTION auditoria.registrar_cambio_cliente()
+2026-11-08 22:02:16.546 MST [46625] LOG:  checkpoint starting: time
+2026-11-08 22:02:18.172 MST [46625] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.253 s, sync=0.123 s, total=1.627 s; sync files=11, longest=0.098 s, average=0.012 s; distance=33 kB, estimate=149 kB; lsn=0/1B38140, redo lsn=0/1B38108
+2026-11-08 22:12:16.372 MST [46625] LOG:  checkpoint starting: time
+2026-11-08 22:12:18.299 MST [46625] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.401 s, sync=0.254 s, total=1.928 s; sync files=12, longest=0.228 s, average=0.022 s; distance=4 kB, estimate=134 kB; lsn=0/1B391E0, redo lsn=0/1B391A8
+2026-11-08 22:14:41.901 MST [59121] soporte_ana@comercial FATAL:  database "comercial" does not exist
+2026-11-08 22:17:16.399 MST [46625] LOG:  checkpoint starting: time
+2026-11-08 22:17:17.673 MST [46625] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.552 s, sync=0.228 s, total=1.274 s; sync files=6, longest=0.203 s, average=0.038 s; distance=6 kB, estimate=122 kB; lsn=0/1B3ABC8, redo lsn=0/1B3AB90
+2026-11-08 22:25:26.318 MST [61034] postgres@comercial FATAL:  database "comercial" does not exist
+2026-11-08 22:30:43.010 MST [62066] postgres@comercial FATAL:  database "comercial" does not exist
+
